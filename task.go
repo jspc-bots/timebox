@@ -10,7 +10,7 @@ var (
 	// updateFrequency is the number of times in a timer
 	// to update the user. An updateFrequency of 10 means every 10%.
 	// An updateFrequency of 4 means every 25%
-	updateFrequency = 4
+	updateFrequency = 2
 )
 
 func RunTimer(c *girc.Client, user, channel, msg string, d time.Duration) {
