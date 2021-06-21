@@ -25,5 +25,9 @@ func RunTimer(c *girc.Client, user, channel, msg string, d time.Duration) {
 		}
 	}
 
-	c.Cmd.Message(channel, msg)
+	c.Cmd.Messagef(channel, "%s: %s", user, msg)
+
+	if channel != user {
+		c.Cmd.Message(user, msg)
+	}
 }
