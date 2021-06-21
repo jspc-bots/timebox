@@ -1,6 +1,10 @@
-# IRC Bot
+# Timebox bot
 
-Do some stuff over IRC
+Given a duration ("1h", "2m", "8h10m3s" etc. - see https://golang.org/pkg/time/#ParseDuration) and an optional message ("Stop! Times up!", "And.... relax", etc.) create a timebox.
+
+That is to say, create a timer which counts down the minutes (sending a message to the requestor at intervals) prior to sending the final message.
+
+This is useful for doing things like setting a so-called 'productivity timer' (like in [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique)), or by ensuring you don't spend too long working on a specific tasks (like a [timebox](https://en.wikipedia.org/wiki/Timeboxing)).
 
 This bot makes a couple of assumptions:
 
